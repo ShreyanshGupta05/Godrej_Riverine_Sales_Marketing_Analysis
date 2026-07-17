@@ -1,7 +1,5 @@
 # Business Requirements Document (BRD)
 **Project:** Godrej Riverine — CRM, Marketing & Sales Analytics
-**Prepared by:** Shreyansh (Business Analyst / Data Analyst)
-**Date:** [fill in today's date]
 
 ---
 
