@@ -1,3 +1,6 @@
+# Godrej Riverine Database ER Diagram
+
+```mermaid
 erDiagram
     CUSTOMERS ||--o{ LEADS : "generates"
     SALES_EXECUTIVES ||--o{ LEADS : "assigned to"
@@ -113,3 +116,4 @@ erDiagram
         date Visit_Date
         decimal Overall_Rating
     }
+```
