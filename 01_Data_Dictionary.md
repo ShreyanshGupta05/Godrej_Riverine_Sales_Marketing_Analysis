@@ -1,13 +1,6 @@
 # Godrej Riverine — Data Dictionary
 **Project:** Godrej Riverine CRM, Marketing, Sales & Inventory Analytics
-**Version:** 1.0
-**Author:** Shreyansh
-**Last Updated:** [fill in today's date]
-
-> A data dictionary is the single source of truth for every field in your database.
-> Anyone (including future-you, 6 months from now) should be able to open this file and
-> understand exactly what each column means, what values it can hold, and how tables connect —
-> without having to re-read the raw CSVs.
+**Author:** Shreyansh Gupta
 
 ---
 
