@@ -1,20 +1,13 @@
--- ============================================================================
+
 -- GODREJ RIVERINE, NOIDA — BUSINESS INTELLIGENCE ANALYSIS QUERIES
--- MySQL 8.0+ | Joins | CTEs | Window Functions
--- Purpose: Lead conversion analysis + Sales trend analysis
--- Kept intentionally lean — 9 queries, each solving ONE clear business
--- question, so every query is easy to explain in an interview.
--- ============================================================================
+
 USE godrej_riverine;
 
--- ============================================================================
 -- SECTION A: LEAD CONVERSION ANALYSIS
--- ============================================================================
-
--- ----------------------------------------------------------------------------
+-- 
 -- A1. Conversion rate by Lead_Source (simple JOIN + aggregation)
 -- Business question: which channel brings leads that actually book?
--- ----------------------------------------------------------------------------
+-- 
 SELECT
     l.Lead_Source,
     COUNT(DISTINCT l.Lead_ID)                              AS total_leads,
@@ -26,11 +19,11 @@ LEFT JOIN Bookings b ON l.Lead_ID = b.Lead_ID
 GROUP BY l.Lead_Source
 ORDER BY conversion_rate_pct DESC;
 
--- ----------------------------------------------------------------------------
+-- 
 -- A2. Full funnel drop-off: Lead -> Site Visit -> Follow-Up -> Booking
 -- (chained CTEs, one per funnel stage)
 -- Business question: at which stage are we losing the most leads?
--- ----------------------------------------------------------------------------
+-- 
 WITH visited AS (
     SELECT DISTINCT Lead_ID FROM Site_Visits
 ),
@@ -54,10 +47,10 @@ LEFT JOIN booked bk     ON l.Lead_ID = bk.Lead_ID
 GROUP BY l.Lead_Source
 ORDER BY conversion_pct DESC;
 
--- ----------------------------------------------------------------------------
+--
 -- A3. Sales Executive performance ranking (CTE + RANK window function)
 -- Business question: who are the top-performing execs by revenue closed?
--- ----------------------------------------------------------------------------
+-- 
 WITH exec_perf AS (
     SELECT
         se.Executive_ID,
@@ -80,10 +73,10 @@ SELECT
 FROM exec_perf
 ORDER BY sales_rank;
 
--- ----------------------------------------------------------------------------
+-- 
 -- A4. Average days from Lead creation to Booking, by source
 -- Business question: which channel converts fastest?
--- ----------------------------------------------------------------------------
+-- 
 SELECT
     l.Lead_Source,
     ROUND(AVG(DATEDIFF(b.Booking_Date, l.Lead_Date)), 1) AS avg_days_to_convert
@@ -92,15 +85,15 @@ JOIN Bookings b ON l.Lead_ID = b.Lead_ID
 GROUP BY l.Lead_Source
 ORDER BY avg_days_to_convert ASC;
 
--- ============================================================================
+-- 
 -- SECTION B: SALES TREND ANALYSIS
--- ============================================================================
+-- 
 
--- ----------------------------------------------------------------------------
+-- 
 -- B1. Monthly sales trend — running total + month-over-month growth
 -- (CTE + window functions: SUM() OVER, LAG())
 -- Business question: is revenue growing month over month, and by how much?
--- ----------------------------------------------------------------------------
+-- 
 WITH monthly_sales AS (
     SELECT
         DATE_FORMAT(Booking_Date, '%Y-%m') AS sales_month,
@@ -121,11 +114,11 @@ SELECT
 FROM monthly_sales
 ORDER BY sales_month;
 
--- ----------------------------------------------------------------------------
+-- 
 -- B2. Best-selling configuration (3BHK/4BHK/5BHK) per quarter
 -- (CTE + ROW_NUMBER window function)
 -- Business question: which unit type sells best, and does that shift quarter to quarter?
--- ----------------------------------------------------------------------------
+-- 
 WITH quarterly_config_sales AS (
     SELECT
         CONCAT(YEAR(Booking_Date), '-Q', QUARTER(Booking_Date)) AS sales_quarter,
@@ -146,10 +139,10 @@ FROM ranked
 WHERE rn = 1
 ORDER BY sales_quarter;
 
--- ----------------------------------------------------------------------------
+-- 
 -- B3. Channel Partner contribution to bookings (% share via window SUM)
 -- Business question: which brokers/partners drive the most bookings?
--- ----------------------------------------------------------------------------
+-- 
 SELECT
     Partner_Name,
     Leads_Generated,
@@ -158,13 +151,13 @@ SELECT
 FROM Channel_Partners
 ORDER BY Bookings DESC;
 
--- ----------------------------------------------------------------------------
+-- 
 -- B4. Marketing spend by channel vs leads generated (cost per lead)
 -- (CTE that unpivots the wide Marketing_Spend table, then JOINs to Leads
 --  via Marketing_Campaigns.Channel — the loose channel-level join noted
 --  in the data dictionary, since Marketing_Spend has no Campaign_ID)
 -- Business question: which marketing channel is most cost-efficient per lead?
--- ----------------------------------------------------------------------------
+-- 
 WITH spend_by_channel AS (
     SELECT 'Google'          AS Channel, SUM(Google)          AS total_spend FROM Marketing_Spend
     UNION ALL SELECT 'Meta',            SUM(Meta)             FROM Marketing_Spend
@@ -189,10 +182,3 @@ SELECT
 FROM spend_by_channel sc
 LEFT JOIN leads_by_channel lc ON sc.Channel = lc.Channel
 ORDER BY sc.total_spend DESC;
-
--- ============================================================================
--- END OF ANALYSIS QUERIES
--- Demonstrates: multi-table JOINs, chained/unpivoting CTEs, and window
--- functions (RANK, ROW_NUMBER, LAG, SUM OVER) applied to real lead
--- conversion and sales trend business questions.
--- ============================================================================
