@@ -59,25 +59,25 @@ in the funnel are we losing the most leads?"* without anyone needing to manually
 ![Executive Summary](page1_executive_summary.png.png)
 
 
-3. **Sales Performance** - bookings, revenue trends, executive ranking, configuration mix
+2. **Sales Performance** - bookings, revenue trends, executive ranking, configuration mix
 
 
 ![Sales Performance](page2_sales_performance.png.png)
 
 
-5. **Lead & CRM Funnel** - funnel drop-off, lead status pipeline, follow-up effectiveness
+3. **Lead & CRM Funnel** - funnel drop-off, lead status pipeline, follow-up effectiveness
 
 
 ![Lead & CRM Funnel](page3_lead_and_crm_funnel.png.png)
 
 
-6. **Marketing Analysis** - channel spend, cost per lead, campaign ROI
+4. **Marketing Analysis** - channel spend, cost per lead, campaign ROI
 
 
 ![Marketing Analysis](page4_marketing_analysis.png.png)
 
 
-7. **Inventory & Property** - unit status by tower, absorption rate, competitor benchmarking
+5. **Inventory & Property** - unit status by tower, absorption rate, competitor benchmarking
 
 
 ![Inventory & Property](page5_inventory_and_property.png.png)
