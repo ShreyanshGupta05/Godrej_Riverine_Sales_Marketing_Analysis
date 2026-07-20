@@ -1,9 +1,5 @@
 # Business Requirements Document (BRD)
 **Project:** Godrej Riverine — CRM, Marketing & Sales Analytics
-**Prepared by:** Shreyansh (Business Analyst / Data Analyst)
-**Status:** ✅ Completed
-**Date:** 20 July 2026
-
 ---
 
 ## 1. Background
@@ -32,12 +28,12 @@ All six questions are now answerable directly from the Power BI dashboard — se
 
 | Objective | Status |
 |---|---|
-| Build a single source of truth (SQL database) consolidating all 12 CRM/Marketing/Sales tables | ✅ Done — see `04_SQL_schema.sql` |
-| Design a Power BI dashboard that lets stakeholders self-serve answers to the above questions | ✅ Done — see `06_Godrej_Riverine_Dashboard.pbix` |
-| Quantify marketing ROI (spend → leads → visits → bookings) by channel and campaign | ✅ Done — Marketing Analysis page + `05_SQL_analysis_queries.sql` |
-| Provide a sales funnel view with drop-off rates at every stage | ✅ Done — Lead & CRM Funnel page |
-| Track sales executive and channel partner performance against targets | ✅ Done — Sales Performance page |
-| Surface a live inventory position (available/reserved/booked, by tower/floor/facing) | ✅ Done — Inventory & Property page |
+| Build a single source of truth (SQL database) consolidating all 12 CRM/Marketing/Sales tables | ✅ Done - see `04_SQL_schema.sql` |
+| Design a Power BI dashboard that lets stakeholders self-serve answers to the above questions | ✅ Done - see `06_Godrej_Riverine_Dashboard.pbix` |
+| Quantify marketing ROI (spend → leads → visits → bookings) by channel and campaign | ✅ Done - Marketing Analysis page + `05_SQL_analysis_queries.sql` |
+| Provide a sales funnel view with drop-off rates at every stage | ✅ Done - Lead & CRM Funnel page |
+| Track sales executive and channel partner performance against targets | ✅ Done - Sales Performance page |
+| Surface a live inventory position (available/reserved/booked, by tower/floor/facing) | ✅ Done - Inventory & Property page |
 
 ## 4. Stakeholders
 
