@@ -6,7 +6,7 @@
 ---
 
 ### 1. Your two highest-volume lead sources are not your best-converting ones
-**What happened:** Google Ads (1,894 leads) and Google Search (1,866 leads) generate by far the most volume, but convert at roughly 7.0–7.8% — near the bottom of all sources. Newspaper Insert generates the fewest leads (453) but converts at the highest rate of any source, close to 10%.
+**What happened:** Google Ads (1,894 leads) and Google Search (1,866 leads) generate by far the most volume, but convert at roughly 7.0–7.8% — near the bottom of all sources. Newspaper Insert generates the fewest leads (453) but converts at the highest rate of any source, close to 10%.\
 **Why it happened:** High-volume digital channels capture broad, lower-intent browsing traffic, while a print-insert reader who follows up is typically a deliberate, higher-intent enquiry.
 **Business impact:** The channels absorbing the most marketing attention and spend are not the channels producing the highest-converting leads — volume and quality are moving in opposite directions.
 **Recommendation:** Keep Google Ads/Search for top-of-funnel volume, but judge them on cost-per-lead, not conversion rate. Give smaller high-converting channels like Newspaper Insert more budget room to scale.
