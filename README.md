@@ -73,33 +73,35 @@ in the funnel are we losing the most leads?"* without anyone needing to manually
 5 pages, built on a star-schema data model with 15+ DAX measures:
 
 1. **Executive Summary** - top-line KPIs across Sales, Marketing, CRM, and Inventory
+   
+   
 
-![Executive Summary](page1_executive_summary.png.png)
+![Executive Summary](images/executive_summary.png)  
+  
 
-
-2. **Sales Performance** - bookings, revenue trends, executive ranking, configuration mix
-
-
-![Sales Performance](page2_sales_performance.png.png)
-
-
-3. **Lead & CRM Funnel** - funnel drop-off, lead status pipeline, follow-up effectiveness
+2. **Sales Performance** - bookings, revenue trends, executive ranking, configuration mix  
 
 
-![Lead & CRM Funnel](page3_lead_and_crm_funnel.png.png)
+![Sales Performance](images/sales_performance.png)  
+  
+
+3. **Lead & CRM Funnel** - funnel drop-off, lead status pipeline, follow-up effectiveness  
 
 
-4. **Marketing Analysis** - channel spend, cost per lead, campaign ROI
+![Lead & CRM Funnel](images/lead_and_crm_funnel.png)  
+  
+
+4. **Marketing Analysis** - channel spend, cost per lead, campaign ROI  
 
 
-![Marketing Analysis](page4_marketing_analysis.png.png)
+![Marketing Analysis](images/marketing_analysis.png)  
+  
+
+5. **Inventory & Property** - unit status by tower, absorption rate, competitor benchmarking  
 
 
-5. **Inventory & Property** - unit status by tower, absorption rate, competitor benchmarking
-
-
-![Inventory & Property](page5_inventory_and_property.png.png)
-
+![Inventory & Property](images/inventory_and_property.png)  
+  
 
 Includes slicers, a custom tooltip page, a drill-through executive detail page, and a
 bookmark-driven reset button.
