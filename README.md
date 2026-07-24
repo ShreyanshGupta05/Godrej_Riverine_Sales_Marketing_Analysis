@@ -8,18 +8,34 @@ from spreadsheets all the way to a decision-ready Power BI dashboard.
 
 ---
 
-## 📁 Repository Contents
+## 📁 Repository Structure
 
-| File | Description |
-|---|---|
-| `Godrej_dataset/` | Raw + cleaned source data (12 CSV tables) |
-| `01_Data_Dictionary.md` | Full column-level definitions for all 12 tables |
-| `02_Database_ERD.md` | Entity-relationship diagram and table relationships |
-| `03_Business_Requirements.md` | Business Requirements Document, problem statement, objectives, scope |
-| `04_SQL_schema.sql` | MySQL DDL — 12-table normalized schema with PK/FK constraints |
-| `05_SQL_analysis_queries.sql` | Advanced SQL - joins, CTEs, and window functions for lead conversion & sales trend analysis |
-| `06_Godrej_Riverine_Dashboard.pbix` | Power BI dashboard file - 5 pages, star schema, DAX measures |
-| `07_Business_Insights.md` | 10 written business insights (What happened → Why → Impact → Recommendation) |
+Godrej-Riverine-Analytics/
+│
+├── README.md
+│
+├── data/
+│ └── godrej_dataset/
+│
+├── sql/
+│ ├── schema.sql
+│ └── analysis_queries.sql
+│
+├── docs/
+│ ├── data_dictionary.md
+│ ├── erd.md
+│ ├── business_requirements.md
+│ └── business_insights.md
+│
+├── dashboard/
+│ └── Godrej_Riverine_Dashboard.pbix
+│
+├── images/
+│ ├── executive_summary.png
+│ ├── sales_performance.png
+│ ├── crm_funnel.png
+│ ├── marketing_analysis.png
+│ └── inventory_property.png
 
 ---
 
