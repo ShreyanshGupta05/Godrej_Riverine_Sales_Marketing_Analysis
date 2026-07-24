@@ -9,33 +9,36 @@ from spreadsheets all the way to a decision-ready Power BI dashboard.
 ---
 
 ## 📁 Repository Structure
-'''
+## 📁 Repository Structure
+
+```bash
 Godrej-Riverine-Analytics/
 │
 ├── README.md
 │
 ├── data/
-│ └── godrej_dataset/
+│   └── godrej_dataset/
 │
 ├── sql/
-│ ├── schema.sql
-│ └── analysis_queries.sql
+│   ├── schema.sql
+│   └── analysis_queries.sql
 │
 ├── docs/
-│ ├── data_dictionary.md
-│ ├── erd.md
-│ ├── business_requirements.md
-│ └── business_insights.md
+│   ├── data_dictionary.md
+│   ├── erd.md
+│   ├── business_requirements.md
+│   └── business_insights.md
 │
 ├── dashboard/
-│ └── Godrej_Riverine_Dashboard.pbix
+│   └── Godrej_Riverine_Dashboard.pbix
 │
-├── images/
-│ ├── executive_summary.png
-│ ├── sales_performance.png
-│ ├── crm_funnel.png
-│ ├── marketing_analysis.png
-│ └── inventory_property.png
+└── images/
+    ├── executive_summary.png
+    ├── sales_performance.png
+    ├── crm_funnel.png
+    ├── marketing_analysis.png
+    └── inventory_property.png
+```
 
 ---
 
