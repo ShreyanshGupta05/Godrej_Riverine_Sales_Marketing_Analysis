@@ -9,7 +9,6 @@ from spreadsheets all the way to a decision-ready Power BI dashboard.
 ---
 
 ## 📁 Repository Structure
-## 📁 Repository Structure
 
 ```bash
 Godrej-Riverine-Analytics/
