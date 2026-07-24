@@ -67,10 +67,3 @@
 *[Source: Inventory & Property — Tower vs. Status stacked bar chart and matrix]*
 
 ---
-
-### 8. Among competitors, Prestige leads on trust and sales experience — not on price
-**What happened:** Prestige has the highest overall rating (7.61), driven by the strongest Sales_Score (8.02) and Trust_Score (8.40), despite having the lowest Price_Score (5.72) of the three tracked competitors. Mahagun Manorial has the best Price_Score (7.64) but the lowest overall rating (6.51), pulled down by weak Sales (5.93) and Trust (6.25) scores. Sobha Aurum leads specifically on Amenities (8.49).\
-**Why it happened:** Buyers appear to weight trust and sales experience more heavily than price perception when forming an overall impression of a project — price advantage alone isn't winning the market for Mahagun.\
-**Business impact:** This table currently only compares the three competitors against each other — it does not yet include a Godrej Riverine row, so it cannot answer "how do we compare," only "which lever matters most among competitors."\
-**Recommendation:** Add a Godrej Riverine row using the same scoring rubric (even a manually estimated one, sourced from internal survey or sales team input) so this table can directly answer competitive positioning — as it stands, present this insight as being about what drives competitor reputation, not about Godrej's own standing.\
-*[Source: Inventory & Property — Competitor Analysis table]*
